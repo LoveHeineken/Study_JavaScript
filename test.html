@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptデビュー</title>
+    </head>
+    <body>
+        <script src="myscript.js"></script>
+        <script>
+            var msg = "hello world!\n",
+            x = 20,
+            y = 10;
+            document.write(msg, x, y);
+            var x;
+            x = 10 * 2; 
+            document.write(x);
+            var s;
+            s = "hello\n";
+            s = 'hello\n';
+            document.write(s);
+        </script>
+    </body>
+</html>
+
+<HTML>
+    <HEAD>
+        <TITLE></TITLE>
+        <SCRIPT language="JavaScript">
+            <!--
+            // オプションメニュー
+            function optionMenu2() {
+                location.href = om.elements['sct'].options[om.elements['sct'].selectedIndex].value;
+            }
+            //-->
+        </SCRIPT>
+    </HEAD>
+    <BODY bgcolor="#ffffff">
+        <FORM name="om">
+            <SELECT name="sct">
+                <OPTION value="#" selected>選択してください</OPTION>
+                <OPTION value="http://www.yahoo.co.jp/">Yahoo!</OPTION>
+                <OPTION value="http://bb.yahoo.co.jp/">Yahoo! BB</OPTION>
+                <OPTION value="http://shopping.yahoo.co.jp/">Yahoo! Shopping</OPTION>
+                <OPTION value="http://auctions.yahoo.co.jp/">Yahoo! Auctions</OPTION>
+            </SELECT>
+            <INPUT type="button" value="GO!" onClick="optionMenu2()">
+        </FORM>
+    </BODY>
+</HTML>

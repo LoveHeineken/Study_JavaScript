@@ -1,0 +1,25 @@
+<HTML>
+    <HEAD>
+        <TITLE></TITLE>
+        <SCRIPT language="JavaScript">
+            <!--
+            // オプションメニュー
+            function optionMenu2() {
+                location.href = om.elements['sct'].options[om.elements['sct'].selectedIndex].value;
+            }
+            //-->
+        </SCRIPT>
+    </HEAD>
+    <BODY bgcolor="#ffffff">
+        <FORM name="om">
+            <SELECT name="sct">
+                <OPTION value="#" selected>選択してください</OPTION>
+                <OPTION value="http://www.yahoo.co.jp/">Yahoo!</OPTION>
+                <OPTION value="http://bb.yahoo.co.jp/">Yahoo! BB</OPTION>
+                <OPTION value="http://shopping.yahoo.co.jp/">Yahoo! Shopping</OPTION>
+                <OPTION value="http://auctions.yahoo.co.jp/">Yahoo! Auctions</OPTION>
+            </SELECT>
+            <INPUT type="button" value="GO!" onClick="optionMenu2()">
+        </FORM>
+    </BODY>
+</HTML>

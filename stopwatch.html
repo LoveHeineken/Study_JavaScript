@@ -4,21 +4,22 @@
 <title>ストップウォッチアプリ</title>
 </head>
 <script type="text/javascript"><!--
-myButton = 0;            // [Start]/[Stop]のフラグ
-function myCheck(){
-  if (myButton==0){      // Startボタンを押した
+start_button = 0;            // [Start]/[Stop]のフラグ
+stop_button = 0;            // [Stop]のフラグ
+var myCheck = function (){
+  if (start_button==0){      // Startボタンを押した
     myStart=new Date();  // スタート時間を退避
-    myButton = 1;
+    start_button = 1;
     document.myForm.myFormButton.value = "Stop!";
     myInterval=setInterval("myDisp()",1);
   }else{                 // Stopボタンを押した
     myDisp();
-    myButton = 0;
+    start_button = 0;
     document.myForm.myFormButton.value = "Start";
     clearInterval( myInterval ); 
   }
 }
-function myDisp(){
+var myDisp = function (){
   myStop=new Date();  // 経過時間を退避
   myTime = myStop.getTime() - myStart.getTime(); // 通算ミリ秒計算
   myH = Math.floor(myTime/(60*60*1000));         // '時間'取得
